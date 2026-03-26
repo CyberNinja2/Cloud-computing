@@ -15,4 +15,21 @@ vi app.py
 
 requirements.py
 flask
-~                                                            
+
+deploy.sh
+#!/bin/bash
+port=8000
+echo "Building Docker image..."
+  docker build -t myapp:latest .
+echo "stopping old containers..."
+  docker stop myapp//true
+echo "Running new container on port $port..." 
+  docker run -d __name myapp -p $port:8080 myapp:latest
+echo"App deployment"
+echo "use killercoda Traffic tab port $port"
+~                                                                                                                                                                                          
+~                                                                                                                                                                                          
+~                                                                                                                                                                                          
+~                                                                                                                                                                                          
+~                                                                                                                                                                                          
+~                                                                                        
