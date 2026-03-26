@@ -12,5 +12,7 @@ vi app.py
     return "hello from CI/CD automated container"
      if __name__ =="__main__":
       app.run (host:"0.0.00",port=8000)
-~                                                                                                                                                                                          
+
+requirements.py
+flask
 ~                                                            
